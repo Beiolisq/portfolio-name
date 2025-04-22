@@ -4,55 +4,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Моё портфолио – Фуд‑фото</title>
+  <title>Главная | Моё портфолио</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header / Navigation -->
   <header class="site-header">
-    <nav class="navbar container">
-      <a href="#food">Фуд‑фото</a>
-      <a href="#about">Обо мне</a>
-      <a href="#contact">Контакты</a>
-    </nav>
+    <div class="container nav-wrapper">
+      <div class="logo">Portfolio</div>
+      <nav class="navbar">
+        <a href="#directions">Услуги</a>
+        <a href="#about">Обо мне</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <!-- Фуд‑фото -->
-    <section id="food" class="section">
-      <h2>Фуд‑фото</h2>
-      <div class="gallery">
-        <div class="gallery-item"><img src="img/food/food1.JPG" alt="Композиция — пример 1"></div>
-        <div class="gallery-item"><img src="img/food/food2.JPG" alt="Композиция — пример 2"></div>
-        <div class="gallery-item"><img src="img/food/food3.JPG" alt="Белый фон с обтравкой"></div>
-        <div class="gallery-item"><img src="img/food/food4.JPG" alt="Белый фон без обтравки"></div>
+  <main>
+    <!-- DIRECTIONS -->
+    <section id="directions" class="section directions">
+      <div class="container">
+        <h2 class="section-title">Основные направления в которых я работаю:</h2>
+        <div class="card-grid">
+          <!-- Food -->
+          <article class="dir-card">
+            <img src="img/food/food1.JPG" alt="Фуд съёмка">
+            <h3>Фуд съёмка</h3>
+            <p>Фото для меню, доставки, рекламы, контент для социальных сетей.</p>
+            <a href="#food" class="btn">Подробнее</a>
+          </article>
+          <!-- Product -->
+          <article class="dir-card">
+            <img src="img/product/prod_01.jpg" alt="Предметная съёмка">
+            <h3>Предметная съёмка</h3>
+            <p>Съёмка для сайта, маркетплейсов, контент для соцсетей. На белом фоне и композиции.</p>
+            <a href="#product" class="btn">Подробнее</a>
+          </article>
+          <!-- Portrait -->
+          <article class="dir-card">
+            <img src="img/portrait/port_01.jpg" alt="Портрет">
+            <h3>Портрет</h3>
+            <p>Прогулочный, студийный, бизнес‑портрет.</p>
+            <a href="#portrait" class="btn">Подробнее</a>
+          </article>
+        </div>
       </div>
-
-      <h3 class="subhead">Тарифы</h3>
-      <ul class="price-list">
-        <li><strong>Композиция / минимализм</strong> — 25 000 тг / час</li>
-        <li><strong>Белый фон с обтравкой</strong> — 35 000 тг / час</li>
-        <li><strong>Белый фон без обтравки</strong> — 25 000 тг / час</li>
-      </ul>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <h2>Обо мне</h2>
-      <p>Краткое описание вашей деятельности, опыт, навыки и т.д.</p>
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img src="img/portrait/port_02.jpg" alt="Фотограф портрет">
+        </div>
+        <div class="about-text">
+          <h2>Предметный и фуд фотограф.</h2>
+          <p>Приветствую! Меня зовут Алёна, я коммерческий фотограф. Я специализируюсь на создании высококачественных фотографий, которые помогут компаниям разных размеров эффектно презентовать свои товары, услуги и бренд. Я снимаю для меню ресторанов, кафе, пекарен, кондитерских, брендов и производителей продукции. Делаю фотографии для соц. сетей, рекламы, агрегаторов доставки. Выезжаю на территорию заказчика со своим оборудованием либо снимаю в домашней студии.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Contacts -->
-    <section id="contact" class="section">
-      <h2>Контакты</h2>
-      <p><a class="btn-link" href="mailto:you@example.com">you@example.com</a></p>
-      <p><a class="btn-link" href="tel:+77001234567">+7 (700) 123‑45‑67</a></p>
-      <p class="socials">Социальные сети: <a href="#" class="social-link">Instagram</a> <a href="#" class="social-link">Telegram</a></p>
+    <!-- CONTACTS -->
+    <section id="contact" class="section contacts">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contact-links">
+          <a href="mailto:you@example.com" class="btn">you@example.com</a>
+          <a href="tel:+77001234567" class="btn">+7 (700) 123‑45‑67</a>
+          <a href="https://t.me/username" class="btn">Telegram</a>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <p>&copy; 2025 Ваше имя. Все права защищены.</p>
+    <div class="container">
+      <p>&copy; 2025 Ваше имя. Все права защищены.</p>
+    </div>
   </footer>
 </body>
 </html>
